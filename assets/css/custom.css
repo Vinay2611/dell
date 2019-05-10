@@ -1,0 +1,44 @@
+.validate_msg,.validate_msg1,.validate_msg2,.validate_msg3,.validate_msg4,.validate_msg5,.validate_msg6,.validate_email,.response_msg,.validate_pass,.validate_email_reg {
+    color: #ffffff;
+    display: none;
+}
+
+.custom-radio{
+    display: inline;
+}
+
+.badge-notify{
+    background:#517ba9;
+    position:relative;
+    top: -20px;
+    right: 10px;
+}
+
+.my-cart-icon-affix {
+    position: fixed;
+    z-index: 999;
+}
+
+.fa-pulse {
+    color: white;
+}
+
+table.dataTable thead .sorting{
+    background-image: none !important;
+}
+
+.new-registration-wrapper a{
+    color: white;
+}
+/*
+.sorting, .sorting_asc, .sorting_desc {
+    background : none !important;
+}
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+    background : none !important;;
+}
+*/
+

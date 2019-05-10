@@ -1,0 +1,1 @@
+ALTER TABLE `purchase_order` ADD `po_file` VARCHAR(256) NOT NULL AFTER `po_value`;

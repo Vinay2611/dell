@@ -1,0 +1,421 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	overflow-x:hidden;
+}
+.nav-toggle{
+	display:none;
+}
+.nav-sections{
+	/*background:#f7f7f7;
+	border-bottom:2px solid #d1d1d1;*/
+	margin:0;
+	padding:0;
+}
+.nav-content{
+	/*padding:5px 0;*/
+}
+.nav-block > ul{
+	list-style:none;
+	margin:0;
+	/*padding:0 15px;*/
+	width:100%;
+}
+.nav-block > ul > li{
+	display:inline-block;
+	/*padding:3px 7px;*/
+	position:static;
+}
+.nav-block > ul > li:first-child{padding-left:0px;}
+.nav-block > ul > li > a{
+	font-size:16px;
+	color:#000;
+	line-height:1.5;
+	letter-spacing:0.0125em;
+	text-decoration:none;
+	position:relative;
+}
+.nav-block > ul > li > a:hover{
+	color:#fff;
+}
+
+.nav-block > ul > li a.has-children:before{
+	content: "";
+    /*background-image: url(../image/sprite-icon.png);*/
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    background-position: -19px 0px;
+    top: 50%;
+    right: -17px;
+    transform: translate(-50%,-25%);
+}
+
+.nav-block > ul > li a:hover.has-children:before{
+	background-position: 0px 0px;
+}
+
+.submenu{
+	position: absolute;
+    background-color: #fff;
+    /*border: 2px solid #ddd;*/
+	left:0;
+    width: 100%;
+    display: inline-block;
+    z-index: 1;
+	display: inline-block;
+    padding-top: 15px;
+	padding-bottom:10px;
+	background-color: #000;
+	opacity:0;
+	visibility:hidden;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+}
+.submenu:before{
+	content:"";
+	background:#000;
+	border-color: #d1d1d1;
+	border-style: solid none none solid;
+    border-width: 1px 0 0 1px;
+	height: 17px;
+    left: 3%;
+    position: absolute;
+    top: -9px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 17px;
+    z-index: 0;
+}
+.nav-block > ul > li:hover a.has-children + .menu-icon + .submenu{
+	opacity:1;
+	visibility:visible;
+}
+.submenu_parent ul{
+	padding: 0 15px;
+	list-style: none;
+}
+.submenu_parent ul li{
+	margin-bottom:0px;
+	float:left;
+}
+.submenu_parent ul li a{
+	color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    text-decoration: none;
+    display: block;
+	padding: 7px 15px;
+}
+
+.submenu_parent ul li a:hover{
+	color:#fff;
+	background:none;
+	text-decoration:underline;
+}
+/*.submenu_parent h6 {
+	margin-bottom:15px;
+}*/
+.Diamonds .submenu_parent ul:first-child,
+.Create_Your_Own_Ring .submenu_parent ul:first-child{
+	width:100%;
+	float:left;
+	/*border-right:1px solid #ddd;*/
+	position:relative;
+}
+.Diamonds .submenu_parent ul:first-child:before,
+.Create_Your_Own_Ring .submenu_parent ul:first-child:before,
+.Engagement_Rings .submenu_parent ul:first-child:before{
+	content: '';
+    width: 200px;
+    height: 15px;
+    position: absolute;
+    /*background-image: url(../image/sprite-icon.png);*/
+    top: 0;
+    right: 0;
+    background-position: -30px 0;
+    transform: translate(50%, -150%);
+    -webkit-transform: translate(50%, -150%);
+    -moz-transform: translate(50%, -150%);
+}
+.Diamonds .submenu_parent ul:last-child,
+.Create_Your_Own_Ring .submenu_parent ul:last-child{
+	width:100%;
+	float:left;	
+}
+.Diamonds .submenu_parent ul:first-child li{
+	display:inline-block;
+	/*width:33.33333333%;*/
+	position:relative;
+	float:left;
+}
+.Create_Your_Own_Ring .submenu_parent ul:first-child li{
+	display:inline-block;
+	/*width:100%;*/
+	position:relative;
+	float:left;
+}
+.Create_Your_Own_Ring .submenu_parent ul:last-child li{
+	display:inline-block;
+	/*width:33.333333%;*/
+	position:relative;
+	float:left;
+}
+.Create_Your_Own_Ring.submenu:before{
+	left: 14%;
+}
+.Engagement_Rings .submenu_parent ul:first-child{
+	width:100%;
+	display:inline-block;
+	position:relative;
+	float:left;
+	/*border-right:1px solid #ddd;*/
+}
+.Engagement_Rings .submenu_parent ul:last-child{
+	width:100%;
+	display:inline-block;
+	position:relative;
+	float:left;
+}
+.Engagement_Rings.submenu:before{
+	left: 25%;
+}
+.wedding_bands.submenu{
+	width:100%;
+}
+.wedding_bands.submenu:before{
+	left: 36%;
+}
+.wedding_bands .submenu_parent ul:first-child{
+	width: 100%;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+.wedding_bands .submenu_parent ul:first-child:before{
+	content: '';
+    width: 200px;
+    height: 15px;
+    position: absolute;
+    /*background-image: url(../image/sprite-icon.png);*/
+    top: 0;
+    right: 0;
+    background-position: -30px 0;
+    transform: translate(3%, 100%);
+    -webkit-transform: translate(3%, 100%);
+    -moz-transform: translate(3%, 100%);
+}
+.menu-icon{display:none;}
+.section-block{
+	width: 100%;
+    height: 800px;
+    display: inline-block;
+    background-color: #ccc;
+    padding: 50px 0;
+
+}
+
+@media(max-width:1250px){
+	.nav-toggle{
+		display:inline-block;
+		width:100%;
+		padding:10px; 
+		background:#ddd;
+		position:relative;
+		top:0;
+		left:0;
+	}
+	.nav-toggle:before{
+		content:'';
+		/*background-image:url(../image/menu-icon.png);*/
+		width:30px;
+		height:24px;
+		display:inline-block;
+		background-position:100% 100%;
+	}
+	.nav-open .nav-toggle:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		background: rgba(0,0,0,.5);
+	}
+	
+	.nav-toggle > span{
+		position:absolute;
+		text-indent:-9999px;
+		overflow:hidden;
+	}
+	.nav-sections{
+		webkit-overflow-scrolling: touch;
+		-webkit-transition: left .3s;
+		transition: left .3s;
+		height: 100%;
+		left: -80%;
+		left: calc(-1*(100% - 54px));
+		overflow: auto;
+		position: fixed;
+		top: 0;
+		width: 60%;
+	}
+	
+	.nav-open .nav-sections{
+		-webkit-box-shadow: 0 0 5px 0 rgba(50,50,50,.75);
+		-ms-box-shadow: 0 0 5px 0 rgba(50,50,50,.75);
+		box-shadow: 0 0 5px 0 rgba(50,50,50,.75);
+		left: 0;
+		width: calc(30% - 54px);
+		z-index: 99;
+		background: #fff;
+	}
+	.page-wrapper {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		/*min-height: 100vh;*/
+	}
+	.nav-open .page-wrapper {
+    	left: 30%;
+		-webkit-transition: left .3s;
+		transition: left .3s;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+	.nav-block > ul > li{
+		width:100%;
+		display:inline-block;
+		padding:0px;
+		position:relative;
+		border-bottom:2px solid #ddd;
+	}
+	.nav-block > ul > li > a{
+		font-size: 16px;
+		line-height: 1.5;
+		display: inline-block;
+		width: 100%;
+		padding: 7px 10px;
+		
+	}
+	.nav-block > ul > li a.has-children:before {
+		display:none;
+	}
+	
+	.nav-block > ul > li a + .menu-icon{
+		position: absolute;
+		top: 0;
+		right: 5px;
+		width: 25px;
+		height: 25px;
+		line-height: 38px;
+		vertical-align: middle;
+		display: inline-block;
+		text-align: center;
+		padding: 5px;
+	}
+	.nav-block > ul > li a + .menu-icon:before{
+		content:'';
+		background-image:url(../image/sprite-icon.png);
+		width: 15px;
+		height: 15px;
+		display: inline-block;
+		top: 0;
+		right: 0;
+		background-position: -18px 5px;
+	}
+	
+	.submenu{
+		position:relative;
+		margin:0;
+		border:0px;
+		width:100%;
+		padding-bottom:0;
+	}
+	.submenu:before{
+		display:none;
+	}
+	.nav-block > ul > li:hover a.has-children + .menu-icon + .submenu{
+		display:none;
+	}
+	
+	.nav-block > ul > li a.has-children + .menu-icon + .submenu {
+		opacity: 0;
+		visibility: hidden;
+		display:none;
+	}
+	.nav-block > ul > li:hover a.has-children + .menu-icon.active + .submenu{
+		display:none;
+	}
+	.nav-block > ul > li a.has-children + .menu-icon.active + .submenu {
+		opacity: 1;
+		visibility: visible;
+	}
+	
+	
+	.Diamonds .submenu_parent ul:first-child, 
+	.Create_Your_Own_Ring .submenu_parent ul:first-child,
+	.Engagement_Rings .submenu_parent ul:first-child{
+		width:100%;
+		padding:0;
+		border:0;
+		margin-bottom:15px;
+	}
+	
+	.Diamonds .submenu_parent ul:last-child, 
+	.Create_Your_Own_Ring .submenu_parent ul:last-child,
+	.Engagement_Rings .submenu_parent ul:last-child{
+		width:100%;
+		padding:0;
+		border:0;
+		margin-bottom: 3%;
+	}
+	
+	.Diamonds .submenu_parent ul:first-child:before, 
+	.Create_Your_Own_Ring .submenu_parent ul:first-child:before{
+		-webkit-transform: translate(-50%, 0%);	
+		-moz-transform: translate(-50%, 0%);
+		transform: translate(-50%, 0%);
+   		 top: -25%
+	}
+	
+	.Engagement_Rings .submenu_parent ul:first-child:before{
+		-webkit-transform: translate(-50%, 0%);	
+		-moz-transform: translate(-50%, 0%);
+		transform: translate(-50%, 0%);
+   		 top: -15%
+	}
+	
+	.wedding_bands .submenu_parent ul:first-child:before{
+		-webkit-transform: translate(-50%, -0%);	
+		-moz-transform: translate(-50%, -0%);
+		transform: translate(-50%, -0%);
+		 top: 5%
+	}
+	.submenu_parent ul{
+		padding:0;
+	}
+	.submenu_parent ul li a{
+		font-size:16px;
+	}
+}
+
+@media(max-width:767px){
+
+}

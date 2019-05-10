@@ -1,0 +1,31 @@
+<html>
+<head>
+<title></title>
+<SCRIPT>
+function show(aval) {
+if (aval == "Yes") {
+optionyes.style.visibility='visible';
+optionyes.style.display='block';
+Form.fileURL.focus();
+} 
+if (aval == "No") {
+optionyes.style.visibility='hidden';
+optionyes.style.display='none';
+}
+}
+</SCRIPT>
+</head>
+<body>
+<form name="Form"> 
+<div>
+File Available:
+<select name="file" onchange="java_script_:show(this.options[this.selectedIndex].value)">
+<option value="No" selected="selected">No</option>
+<option value="Yes">Yes</option>
+</select>
+</div>
+<div id="optionyes" style="visibility:hidden">
+URL: <input name="fileURL" size="40" />
+</div>
+</body>
+</html>

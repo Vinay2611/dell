@@ -1,0 +1,558 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.7.0');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+*{
+	margin:0;
+	padding:0;
+}
+body,html{
+	width:100%;
+	height:100%;
+}
+body{
+	background-image:url(../images/tech-background.jpg);
+	background-position:100% 100%;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+    background-size:cover;
+	font-family: 'roboto',Arial,Helvetica,sans-serif;
+}
+
+.btn{
+	padding:7px 15px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	border-radius:0;
+	border:0;
+	background:#fff;
+	color:#0071c5;
+	vertical-align: top;
+    line-height: 1.5;
+}
+a{
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:14px;
+ line-height:auto;
+ font-weight:500;
+}
+a:hover{
+	color:#fff;
+}
+.btn:focuss,
+.btn.btn-primary:focus{
+	outline:0;
+	box-shadow:0;
+}
+input[type="text"],
+input[type="password"]{
+	font-size:14px;
+	color:#000;
+}
+input[type="text"]:foucs,
+input[type="password"]:foucs,{
+	box-shadow:none;
+	outline:0;
+}
+input[type="text"]:visited,
+input[type="password"]:visited{
+	box-shadow:none;
+	outline:0;
+}
+
+/*----Header----*/
+.page-header{
+	width:100%;
+	display:inline-block;
+	
+}
+.header-min{
+	width:100%;
+	display:inline-block;
+	padding:25px 0;
+	background: rgba(11,35,73,0.5);
+	border-bottom:1px solid #fff;
+}
+
+.user-entry{
+	width:100%;
+	display:inline-block;
+	margin-top:5em;
+	padding: 0 3em;
+}
+.usericon{
+	margin-bottom:30px;
+}
+.usericon i { color:#fff;}
+
+.user-form{position:relative;}
+
+.user-form .login-block{
+	position: relative;
+    width: 100%;
+    display: inline-block;
+}
+.user-form .login-block span{
+	position: absolute;
+    background:#0073cf; 
+    padding: 8px 10px;
+}
+.user-form .login-block span i{color:#fff;}
+.user-form label{
+	width:100%; 	
+	top:0; 
+	left:0; 
+	
+	margin:0px;
+}
+.user-form label i{
+	color:#fff;	
+}
+.user-form input{
+	padding-left:48px;
+	height:45px;
+	margin-bottom:15px;
+	border-radius:0px;
+}
+.user-form label.error{
+    margin-bottom: 8px;
+	color:#FF0004;
+	font-weight:normal;
+}
+
+.user-form input:focus{
+	outline:0;
+	box-shadow:none;
+}
+.form-group p{
+	padding:1em 0;
+	color:#fff;
+	margin:0;
+}
+.user-entry.log:before{ 
+content:'';
+position:absolute;
+width:3px; 
+height: 70%;
+left: 0;
+top: 50%;
+transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,ffffff+51,7db9e8+100&0+0,1+50,0+100 */
+background: -moz-linear-gradient(top, rgba(30,87,153,0) 0%, rgba(251,252,253,1) 50%, rgba(255,255,255,0.98) 51%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(251,252,253,1) 50%,rgba(255,255,255,0.98) 51%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(251,252,253,1) 50%,rgba(255,255,255,0.98) 51%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+}
+.user-entry h3{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#fff;
+	line-height:1.5;
+	margin:25px 0;
+	padding-top:15px;	
+}
+.regi{
+	padding:20px 0;
+}
+.rewards-block{
+	width:100%;
+	display:inline-block;
+}
+.menublog{
+	margin: 25px 0;
+}
+.menublog .radio{
+	position:relative;
+	display:inline-block;
+	padding-left:25px;
+	font-size:14px;
+	color:#fff;
+	font-weight:500;
+	letter-spacing: 0.025em;
+	margin: 7px 0;
+}
+.menublog .radio input{
+	position: absolute;
+    top: 32%;
+    left: 9%;
+    opacity: 0;
+    transform: translate(50%,-50%);
+	
+}
+
+.menublog .radio .checkround{
+	position:absolute;
+	top:50%;
+	left:5%;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	border:1px solid #fff;
+	cursor:pointer;
+	transform:translate(0%,-50%);
+	-moz-transform:translate(0%,-50%);
+	-webkit-transform:translate(0%,-50%);
+}
+.menublog .radio .checkround:before{
+	left: 2px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #f8204f;
+}
+.menu-list{
+	/*width:165px;*/
+	display:inline-block;
+	vertical-align: top;
+	margin-right:7px;
+}
+
+.reward-menu{
+	background:#fff;
+	display:inline-block;
+	vertical-align: top;
+	/*width: 600px;*/
+	padding:0;
+	border-radius: 10px;
+	padding-top:0px;
+	/*margin-left:7px;*/
+}
+.reward-menu ul{
+	list-style:none;
+	display:inline-block;
+	margin:0;
+}
+.reward-menu ul li{
+	margin-right:5px;
+	display:inline-block;
+}
+.reward-menu ul li:last-child{
+	margin-right:0px;
+}
+.reward-menu ul li a{
+	padding: 18px 30px;
+	padding-right:10px;
+    display: inline-block;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+	position:relative;
+}
+.reward-menu ul li a img{
+	position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.reward-menu ul li:nth-child(2n) a img{
+	left: 14%;
+}
+.reward-menu ul li:nth-child(4n) a img{
+	left: 14.5%;
+}
+.reward-menu ul li a:hover{
+	color:#fff;
+	background:#0073ce;
+}
+.reward-menu ul li:first-child a:hover{
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+}
+.reward-user{
+	padding: 8px 14px;
+    width: 45px;
+    height: 45px;
+	background:#a1a1a1;
+	display:inline-block;
+	vertical-align:top;
+	float:right;
+	border-radius:50%;
+	position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-20%,-50%)
+}
+.reward-user a{
+	color:#fff;
+}
+.reward-user a i{
+	font-size:26px;
+}
+.table-grid{
+	width:100%;
+	display:inline-block;
+}
+.table-grid table{
+	background:#fff;
+}
+.table-grid table thead{
+	background:#a1a1a1;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:600;
+	color:#000;
+}
+.table-grid table.dataTable thead .sorting:before, 
+.table-grid table.dataTable thead .sorting_asc:before, 
+.table-grid table.dataTable thead .sorting_asc_disabled:before, 
+.table-grid table.dataTable thead .sorting_desc:before, 
+.table-grid table.dataTable thead .sorting_desc_disabled:before {
+    right: 1em;
+    content: "\f0de";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+
+.table-grid table.dataTable thead .sorting:after,
+.table-grid table.dataTable thead .sorting:before,
+.table-grid table.dataTable thead .sorting_asc:after,
+.table-grid table.dataTable thead .sorting_asc:before,
+.table-grid table.dataTable thead .sorting_asc_disabled:after,
+.table-grid table.dataTable thead .sorting_asc_disabled:before,
+.table-grid table.dataTable thead .sorting_desc:after,
+.table-grid table.dataTable thead .sorting_desc:before,
+.table-grid table.dataTable thead .sorting_desc_disabled:after,
+.table-grid table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}
+
+
+
+
+.table-grid table thead tr th{
+	padding:10px 5px;
+	padding-right:10px;
+}
+
+.table-grid table thead tr th.center{
+	text-align:center;
+}
+.table-grid table thead tr th.left{
+	text-align:left;
+}
+.table-grid table thead tr th.right{
+	text-align:right;
+}
+
+.table-grid table tbody tr:nth-child(2n+1){
+	background:#ebebeb;
+}
+.table-grid table tbody tr td{
+	padding:10px 5px;
+	padding-right:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+.table-grid table tbody tr td.center{
+	text-align:center;
+}
+.table-grid table tbody tr td.left{
+	text-align:left;
+}
+.table-grid table tbody tr td.right{
+	text-align:right;
+}
+
+.contest-block{
+	width:100%;
+	display:inline-block;
+}
+.contest-blog{
+	width:100%;
+	display:inline-block;
+}
+.contest-head{
+	border-bottom:1px solid #000;
+	border-top:1px solid #000;
+	width:100%;
+	display:inline-block;
+	padding:0 15px;
+}
+.contest-head h5{
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+	letter-spacing:0.0125em;
+}
+.contest-list{
+	margin:15px 0;
+	padding:0px 15px; 
+}
+.contest-list ul{
+	list-style:none;
+	margin-bottom:0;
+}
+.contest-list ul li{
+	padding:5px 0;
+}
+
+/* The custom-radio */
+.custom-radio {
+font-weight: normal;
+ display: block;
+ position: relative;
+ padding-left: 35px;
+/* margin-bottom: 12px;*/
+ cursor: pointer;
+ font-size: 18px;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.custom-radio input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 20px;
+ width: 20px;
+ background-color: #eee;
+ border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-radio:hover input ~ .checkmark {
+ background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.custom-radio input:checked ~ .checkmark {
+ background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom-radio input:checked ~ .checkmark:after {
+ display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio .checkmark:after {
+top: 6px;
+left: 6px;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background: white;
+}
+.footer{
+	margin:15px 0;
+	text-align:center;
+}
+.footer p{
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+}
+
+
+.breadcrums-block .breadcrumb{
+	background-color:transparent;
+	padding:8px 0;
+	/*border-bottom:1px solid #fff;*/
+	border-radius:0;
+}
+.curve {
+    border-radius: 5px;
+}
+
+.breadcrumb > li + li::before{
+	content: "››";
+	font-size:16px;	
+	margin-right:5px;
+}
+
+.breadcrums-block .breadcrumb a{
+	font-size:14px;
+	color:#fff;
+}
+.breadcrums-block .breadcrumb > li.is-active{
+	cursor: default;
+	font-size:14px;
+	color:#fff;
+	font-weight:600;
+}
+
+.order-wrapper{
+	width:100%;
+	max-width:100%;
+	display:inline-block;
+}
+.footer-line{
+	width:100%;
+	max-width:100%;
+	display:inline-block;
+	margin-top:5%;
+}
+
+
+@media(max-width:1250px){
+.reward-user a i {
+    font-size: 28px;
+}
+}
+
+@media(max-width:767px){
+	.user-entry {
+		margin-top: 3em;
+		padding: 0 1em;
+	}
+	.user-entry h3{
+		font-size:21px;
+	}
+	.user-entry.log:before{ 
+	content:'';
+	position:absolute;
+	width:100%; 
+	height: 3px;
+	left: 50%;
+	top: 4%;
+	transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,ffffff+50,7db9e8+100&0+0,1+50,0+100 */
+background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(255,255,255,1) 50%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(255,255,255,1) 50%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(255,255,255,1) 50%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+	}
+	
+.reward-menu{
+	width:75%;
+	display:inline-block;
+}
+.table-grid{
+	overflow-x:scroll;
+}
+}
+
+.pointer {
+cursor:pointer;	
+}
+
+.pointer:hover {
+color:#231F1F;
+text-decoration:none;
+}
+
+.badge {
+background-color:#337ab7 !important;
+}

@@ -1,0 +1,3 @@
+include_once('classes/class.Encryption.php');
+$oEncryption = new Encryption();
+$decId = $oEncryption->dec($_GET['id']);

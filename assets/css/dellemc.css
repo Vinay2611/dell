@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin: 0px; padding: 0px; }
+
+.new-registration-wrapper{ max-width: 600px; /*margin: 0 auto;*/ margin-top: 30px; color:#fff; }
+
+.new-registration-wrapper h1{ border-bottom: 1px solid #fff; padding-bottom: 20px;  margin-bottom: 30px; font-size:28px;}
+.new-registration-wrapper .form-control{border-radius:0px;}
+
+.table-wrapper{ background:#fff;  }
